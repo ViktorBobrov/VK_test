@@ -25,95 +25,77 @@
     />
   </head>
   <body>
-    <section class="form_container">
-      <div class="header_container">
-        <h1 class="header_form">Бронирование переговорной комнаты:</h1>
+    <section class="form">
+      <div class="wrapper-element">
+        <h2>Форма планирования переговорной</h2>
       </div>
-
-      <div class="formes_container">
-        <div class="flex_el">
-          <label class="form_text">Выберите башню:</label>
-          <div class="select_menu">
-            <div class="select">
-              <span>Выберите Башню</span>
-              <i class="fas fa-angle-down"></i>
-            </div>
-            <div class="options_list">
-              <div class="options">Башня А</div>
-              <div class="options">Башня Б</div>
-            </div>
-          </div>
-        </div>
-        <div class="flex_el">
-          <label class="form_text">Выберите этаж:</label>
-          <div class="select_menu">
-            <div class="select">
-              <span>Выберите этаж</span>
-              <i class="fas fa-angle-down"></i>
-            </div>
-            <div class="options_list">
-              <div class="options">этаж 3</div>
-              <div class="options">этаж 4</div>
-              <div class="options">этаж 5</div>
-              <div class="options">этаж 6</div>
-              <div class="options">этаж 7</div>
-              <div class="options">этаж 8</div>
-              <div class="options">этаж 9</div>
-              <div class="options">этаж 10</div>
-              <div class="options">этаж 11</div>
-              <div class="options">этаж 12</div>
-              <div class="options">этаж 13</div>
-              <div class="options">этаж 14</div>
-              <div class="options">этаж 15</div>
-              <div class="options">этаж 16</div>
-              <div class="options">этаж 17</div>
-              <div class="options">этаж 18</div>
-              <div class="options">этаж 19</div>
-              <div class="options">этаж 20</div>
-              <div class="options">этаж 21</div>
-              <div class="options">этаж 22</div>
-              <div class="options">этаж 23</div>
-              <div class="options">этаж 24</div>
-              <div class="options">этаж 25</div>
-              <div class="options">этаж 26</div>
-              <div class="options">этаж 27</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex_el">
-          <label class="form_text">Выберите кабинку:</label>
-          <div class="select_menu">
-            <div class="select">
-              <span>Выберите кабинку</span>
-              <i class="fas fa-angle-down"></i>
-            </div>
-            <div class="options_list">
-              <div class="options">Кабинка 1</div>
-              <div class="options">Кабинка 2</div>
-              <div class="options">Кабинка 3</div>
-              <div class="options">Кабинка 4</div>
-              <div class="options">Кабинка 5</div>
-              <div class="options">Кабинка 6</div>
-              <div class="options">Кабинка 7</div>
-              <div class="options">Кабинка 8</div>
-              <div class="options">Кабинка 9</div>
-              <div class="options">Кабинка 10</div>
-            </div>
-          </div>
-        </div>
-        <div class="flex_el">
-          <label class="form_text">Выберите время:</label>
-          <input type="datetime-local" class="select_data" />
-        </div>
-        <div class="flex_el">
-          <label class="form_text">Ваш коментарий</label>
-          <input type="text" class="select_data" />
-        </div>
-        <div class="flex_el">
-          <button class="push_but">Отправить</button>
-          <button class="delete_but">Очистить</button>
-        </div>
+      <div class="wrapper-element">
+        <label for="building-select">Выберите башню:</label>
+        <select id="building-select" class="select-custom">
+          <option value="A">Башня А</option>
+          <option value="B">Башня Б</option>
+        </select>
+      </div>
+      <div class="wrapper-element">
+        <label for="floor-select">Выберите этаж:</label>
+        <select id="floor-select" class="select-custom">
+          <option value="3">Этаж 3</option>
+          <option value="4">Этаж 4</option>
+          <option value="5">Этаж 5</option>
+          <option value="6">Этаж 6</option>
+          <option value="7">Этаж 7</option>
+          <option value="8">Этаж 8</option>
+          <option value="9">Этаж 9</option>
+          <option value="10">Этаж 10</option>
+          <option value="3">Этаж 11</option>
+          <option value="4">Этаж 12</option>
+          <option value="5">Этаж 13</option>
+          <option value="6">Этаж 14</option>
+          <option value="7">Этаж 15</option>
+          <option value="8">Этаж 16</option>
+          <option value="9">Этаж 17</option>
+          <option value="10">Этаж 18</option>
+          <option value="10">Этаж 19</option>
+          <option value="3">Этаж 20</option>
+          <option value="4">Этаж 21</option>
+          <option value="5">Этаж 22</option>
+          <option value="6">Этаж 23</option>
+          <option value="7">Этаж 24</option>
+          <option value="8">Этаж 25</option>
+          <option value="9">Этаж 26</option>
+          <option value="27">Этаж 27</option>
+        </select>
+      </div>
+      <div class="wrapper-element">
+        <label for="room-select">Выберите переговорную:</label>
+        <select id="room-select" class="select-custom">
+          <option value="1">Переговорная 1</option>
+          <option value="2">Переговорная 2</option>
+          <option value="3">Переговорная 3</option>
+          <option value="4">Переговорная 4</option>
+          <option value="5">Переговорная 5</option>
+          <option value="6">Переговорная 6</option>
+          <option value="7">Переговорная 7</option>
+          <option value="8">Переговорная 8</option>
+          <option value="9">Переговорная 9</option>
+          <option value="10">Переговорная 10</option>
+        </select>
+      </div>
+      <div class="wrapper-element">
+        <label for="date-picker">Выберите дату:</label>
+        <input type="date" id="date-picker" class="select-custom" />
+      </div>
+      <div class="wrapper-element">
+        <label for="time-picker">Выберите время:</label>
+        <input type="time" id="time-picker" class="select-custom" />
+      </div>
+      <div class="wrapper-element">
+        <label for="comment-textarea">Комментарий:</label>
+        <textarea id="comment-textarea" class="select-custom"></textarea>
+      </div>
+      <div class="button-wrapper">
+        <button id="submit-button" class="button-custom">Отправить</button>
+        <button id="clear-button" class="button-custom">Очистить</button>
       </div>
     </section>
     <script src="index.js"></script>
